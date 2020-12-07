@@ -6,16 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Fourth extends AppCompatActivity {
+public class StartScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fourth);
+        setContentView(R.layout.startscreen);
     }
 
-    public void onClickToScreen(View v){
-        Intent intent = new Intent(Fourth.this, Fifth.class);
-        startActivity(intent);
-    }
 }

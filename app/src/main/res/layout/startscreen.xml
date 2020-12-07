@@ -26,6 +26,7 @@
         android:layout_marginRight="161dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView12"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/car4" />
 
     <ImageView

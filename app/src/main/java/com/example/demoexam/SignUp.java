@@ -5,17 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
-public class Third extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.third);
+        setContentView(R.layout.signup);
     }
 
-    public void onClickToScreen(View v){
-        Intent intent = new Intent(Third.this, Fourth.class);
-        startActivity(intent);
-    }
 }
