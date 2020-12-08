@@ -23,7 +23,13 @@ public class SignIn extends AppCompatActivity {
     }
 
 
-        public void OnClickLogD (View L) {
+
+    protected void onClickCreateAccount(View s){
+        Intent intentCreateAccount = new Intent(SignIn.this, SignUp.class);
+        startActivity(intentCreateAccount);
+    }
+
+        public void OnClickLogD (View l) {
 
             ImageView img = (ImageView) findViewById(R.id.Submit);
             EditText log = (EditText)findViewById(R.id.Login);
@@ -51,5 +57,5 @@ public class SignIn extends AppCompatActivity {
                 toast.show();
             }
 
-    }
+        }
 }

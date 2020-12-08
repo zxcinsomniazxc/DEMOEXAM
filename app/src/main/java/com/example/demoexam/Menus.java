@@ -15,7 +15,7 @@ public class Menus extends AppCompatActivity {
     }
 
     public void onClickToScreen(View v){
-        Intent intent = new Intent(Menus.this, Sixth.class);
+        Intent intent = new Intent(Menus.this, history.class);
         startActivity(intent);
     }
 }
