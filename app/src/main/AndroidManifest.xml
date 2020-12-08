@@ -22,7 +22,7 @@
         </activity>
         <activity android:name=".StartScreen">
         </activity>
-        <activity android:name=".Fifth">
+        <activity android:name=".Menus">
         </activity>
         <activity android:name=".Sixth">
         </activity>

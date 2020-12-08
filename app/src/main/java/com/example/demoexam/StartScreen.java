@@ -14,4 +14,8 @@ public class StartScreen extends AppCompatActivity {
         setContentView(R.layout.startscreen);
     }
 
+    protected void onClickOpenMenu(View s){
+        Intent intentOpenMenu = new Intent(StartScreen.this, Menus.class);
+        startActivity(intentOpenMenu);
+    }
 }

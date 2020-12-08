@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
 
@@ -24,17 +26,29 @@ public class SignIn extends AppCompatActivity {
         public void OnClickLogD (View L) {
 
             ImageView img = (ImageView) findViewById(R.id.Submit);
-            TextView log = findViewById(R.id.Login);
-            TextView pass = findViewById(R.id.Password);
+            EditText log = (EditText)findViewById(R.id.Login);
+            EditText pass = (EditText)findViewById(R.id.Password);
 
-            String logInput = (String) log.getText().toString();
-            String passInput = (String) pass.getText().toString();
-            Log.d("log",logInput);
-            Log.d("pass",passInput);
+            String logInput = (String) log.getText().toString();String passInput = (String) pass.getText().toString();Log.d("log",logInput);Log.d("pass",passInput);
 
-            if ((logInput=="serg") && (passInput== "1234")){
-                    Intent intentLogPass = new Intent(SignIn.this, StartScreen.class);
-                    startActivity(intentLogPass);
+            if(log.getText().toString().equals("serk") && pass.getText().toString().equals("123")) {
+                Intent intentLogPass = new Intent(SignIn.this, StartScreen.class);
+                startActivity(intentLogPass);
+            }
+            else if(!log.getText().toString().equals("serk") && !pass.getText().toString().equals("123")) {
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Логин и|или пароль введен неправильно!", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+            else if(!log.getText().toString().equals("serk")){
+            Toast toast = Toast.makeText(getApplicationContext(),
+                "Логин введен неправильно!", Toast.LENGTH_SHORT);
+            toast.show();
+            }
+            else if(!pass.getText().toString().equals("123")){
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Пароль введен неправильно!", Toast.LENGTH_SHORT);
+                toast.show();
             }
 
     }

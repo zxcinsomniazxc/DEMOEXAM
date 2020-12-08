@@ -6,16 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Fifth extends AppCompatActivity {
+public class Menus extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fifth);
+        setContentView(R.layout.menus);
     }
 
     public void onClickToScreen(View v){
-        Intent intent = new Intent(Fifth.this, Sixth.class);
+        Intent intent = new Intent(Menus.this, Sixth.class);
         startActivity(intent);
     }
 }
