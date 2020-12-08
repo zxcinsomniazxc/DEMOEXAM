@@ -6,9 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
+
 public class SignIn extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,11 +20,22 @@ public class SignIn extends AppCompatActivity {
         setContentView(R.layout.signin);
     }
 
-    public void onClickLogin(View r){
-        //Intent intentReg = new Intent(SignIn.this, SignUp.class);
-        //startActivity(intentReg);
 
-        TextView log = findViewById(R.id.Login); String logInput = (String) log.getText().toString(); Log.d("log",logInput);
-        TextView pass = findViewById(R.id.Password); String passInput = (String) pass.getText().toString(); Log.d("pass",passInput);
+        public void OnClickLogD (View L) {
+
+            ImageView img = (ImageView) findViewById(R.id.Submit);
+            TextView log = findViewById(R.id.Login);
+            TextView pass = findViewById(R.id.Password);
+
+            String logInput = (String) log.getText().toString();
+            String passInput = (String) pass.getText().toString();
+            Log.d("log",logInput);
+            Log.d("pass",passInput);
+
+            if ((logInput=="serg") && (passInput== "1234")){
+                    Intent intentLogPass = new Intent(SignIn.this, StartScreen.class);
+                    startActivity(intentLogPass);
+            }
+
     }
 }
