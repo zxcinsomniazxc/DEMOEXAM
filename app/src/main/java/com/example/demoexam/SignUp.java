@@ -16,4 +16,9 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.signup);
     }
 
+    protected void onClickVhod(View s){
+        Intent intentVhod = new Intent(SignUp.this, StartScreen.class);
+        startActivity(intentVhod);
+    }
+
 }
