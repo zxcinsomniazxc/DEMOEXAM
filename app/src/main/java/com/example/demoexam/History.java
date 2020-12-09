@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class history extends AppCompatActivity {
+public class History extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +15,7 @@ public class history extends AppCompatActivity {
     }
 
     public void onClickToScreen(View v){
-        Intent intent = new Intent(history.this, Seventh.class);
+        Intent intent = new Intent(History.this, Settings.class);
         startActivity(intent);
     }
 }

@@ -24,7 +24,7 @@ public class SignIn extends AppCompatActivity {
 
 
 
-    protected void onClickCreateAccount(View s){
+    public void onClickCreateAccount(View s){
         Intent intentCreateAccount = new Intent(SignIn.this, SignUp.class);
         startActivity(intentCreateAccount);
     }
