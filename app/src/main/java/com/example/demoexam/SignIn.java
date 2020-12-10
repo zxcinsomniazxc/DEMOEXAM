@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Map;
+
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
 
 //Экран SignIn осуществляет авторизацию пользователя
@@ -49,7 +51,7 @@ public class SignIn extends AppCompatActivity {
             String logInput = (String) log.getText().toString();String passInput = (String) pass.getText().toString();Log.d("log",logInput);Log.d("pass",passInput); //выводит на экран введенные данные для проверки
 
             if(log.getText().toString().equals("serk") && pass.getText().toString().equals("123")) { //если введены правильные данные переходит на основной экран
-                Intent intentLogPass = new Intent(SignIn.this, StartScreen.class);
+                Intent intentLogPass = new Intent(SignIn.this, MapsActivity.class);
                 startActivity(intentLogPass);
             }
             else if(!log.getText().toString().equals("serk") && !pass.getText().toString().equals("123")) { //если хотя бы одно поле введено неверно, выдает ошибку

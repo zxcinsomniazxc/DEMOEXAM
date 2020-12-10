@@ -14,4 +14,6 @@
     <string name="title_activity_bokovoye_menyu">BokovoyeMenyu</string>
     <string name="title_activity_menyu">MenyuActivity</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_menyu_activityyy">MenyuActivityyy</string>
+    <string name="title_activity_left_menyu">LeftMenyu</string>
 </resources>

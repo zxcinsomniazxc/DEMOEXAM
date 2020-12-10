@@ -34,7 +34,7 @@ public class Menus extends AppCompatActivity {
 
     //метод осуществляет переход обратно на Главный экран приложения при нажатии на картинку Меню
     public void onClickGoBack(View q){
-        Intent intentGoBack = new Intent(Menus.this, StartScreen.class);
+        Intent intentGoBack = new Intent(Menus.this, MapsActivity.class);
         startActivity(intentGoBack);
     }
 }
