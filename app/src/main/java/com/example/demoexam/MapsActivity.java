@@ -46,7 +46,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Add a marker in Sydney and move the camera
         LatLng yakutsk = new LatLng(62, 129);
-        mMap.addMarker(new MarkerOptions().position(yakutsk).flat(true).title("Marker in Yakutsk").icon(BitmapDescriptorFactory.fromResource(R.drawable.metka)));;
+        mMap.addMarker(new MarkerOptions().position(yakutsk).flat(true).title("Marker in Yakutsk").icon(BitmapDescriptorFactory.fromResource(R.drawable.metka4)));;
         mMap.moveCamera(CameraUpdateFactory.newLatLng(yakutsk));
     }
 }
