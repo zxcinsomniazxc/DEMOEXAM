@@ -27,7 +27,7 @@
         app:srcCompat="@drawable/menu5_13" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/Map"
         android:layout_width="733dp"
         android:layout_height="908dp"
         android:layout_marginStart="300dp"
@@ -63,7 +63,7 @@
         app:srcCompat="@drawable/menu5_1" />
 
     <ImageView
-        android:id="@+id/imageView24"
+        android:id="@+id/Privacy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -74,7 +74,7 @@
         app:srcCompat="@drawable/menu5_11" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
@@ -89,7 +89,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/History"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
